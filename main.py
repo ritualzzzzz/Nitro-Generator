@@ -1,10 +1,9 @@
 import os, requests, random, threading, json, time, multiprocessing
 from colorama import Fore
 
-# Credit to Pycenter by billythegoat356
-# Github: https://github.com/billythegoat356/pycenter/
-# License: https://github.com/billythegoat356/pycenter/blob/main/LICENSE
-
+# Created by ritualzzzz
+# Helper/supporter .cuzisaidso
+# Love yourself everyone <3
 def center(var:str, space:int=None): # From Pycenter
     if not space:
         space = (os.get_terminal_size().columns - len(var.splitlines()[int(len(var.splitlines())/2)])) / 2
@@ -13,14 +12,22 @@ def center(var:str, space:int=None): # From Pycenter
 
 class Console():        
     def ui(self):
-        os.system(f'cls && title [DNG] Discord Nitro Generator  ^|  For Help join discord.gg/kaneki' if os.name == "nt" else "clear")
+        os.system(f'cls && title [RITUALZ] Discord Nitro Generator  ^|  For Thanks. Cashapp $qzorz' if os.name == "nt" else "clear")
         print(center(f"""\n\n
-██████╗ ███╗   ██╗ ██████╗ 
-██╔══██╗████╗  ██║██╔════╝            ~ Discord Nitro Generator ~
-██║  ██║██╔██╗ ██║██║  ███╗     
-██║  ██║██║╚██╗██║██║   ██║     github.com/kanekiWeb ~ skulldev.ga
-██████╔╝██║ ╚████║╚██████╔╝ 
-╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ \n\n
+
+     ,. -  .,                    ,.-·.              ,  . .,  °       .-,             ,'´¨';'                    ,.,   '               ,.  '                ,. –  - .,  °                ,. –  - .,  °       
+   ,' ,. -  .,  `' ·,            /    ;'\'      ;'´    ,   ., _';\'     ;  ';\          ,'   ';'\'                ;´   '· .,            /   ';\               ';_,.., _     '`. '           ';_,.., _     '`. '   
+   '; '·~;:::::'`,   ';\        ;    ;:::\     \:´¨¯:;'   `;::'\:'\   ';   ;:'\        ,'   ,'::'\             .´  .-,    ';\        ,'   ,'::'\               \:::::::::::';   ,'\           \:::::::::::';   ,'\  
+    ;   ,':\::;:´  .·´::\'     ';    ;::::;'      \::::;   ,'::_'\;'   ';  ';::';      ,'   ,'::::;            /   /:\:';   ;:'\'     ,'    ;:::';'               '\_;::;:,·´  .·´::\‘          '\_;::;:,·´  .·´::\‘
+    ;  ·'-·'´,.-·'´:::::::';     ;   ;::::;           ,'  ,'::;'  ‘     ';  ';::;     ,'   ,'::::;'           ,'  ,'::::'\';  ;::';     ';   ,':::;'                    , '´ .·´:::::;'                , '´ .·´:::::;'  
+  ;´    ':,´:::::::::::·´'     ';  ;'::::;            ;  ;:::;  °     ';  ';::;    ,'   ,'::::;'        ,.-·'  '·~^*'´¨,  ';::;     ;  ,':::;' '                  .´  .'::::::;·´'               .´  .'::::::;·´'   
+   ';  ,    `·:;:-·'´          ;  ';:::';             ;  ;::;'  ‘       \   '·:_,'´.;   ;::::;‘        ':,  ,·:²*´¨¯'`;  ;::';    ,'  ,'::;'                 .·´ ,·´:::::;·´               .·´ ,·´:::::;·´       
+   ; ,':\'`:·.,  ` ·.,         ';  ;::::;'            ;  ;::;'‚          \·,   ,.·´:';  ';:::';         ,'  / \::::::::';  ;::';    ;  ';_:,.-·´';\‘       ,·´  .´;::–·~^*'´';\‚        ,·´  .´;::–·~^*'´';\‚   
+   \·-;::\:::::'`:·-.,';        \*´\:::;‘            ',.'\::;'‚           \:\¯\:::::\`*´\::;  '      ,' ,'::::\·²*'´¨¯':,'\:;     ',   _,.-·'´:\:\‘      '.,_ ,. -·~:*'´¨¯:\:\ °     '.,_ ,. -·~:*'´¨¯:\:\ °
+    \::\:;'` ·:;:::::\::\'       '\::\:;'              \::\:;'‚             `'\::\;:·´'\:::'\'   '      \`¨\:::/          \::\'      \¨:::::::::::\';       \:::::::::::::::::::\;        \:::::::::::::::::::\;  
+     '·-·'       `' · -':::''        `*´‘                \;:'      ‘                     `*´°          '\::\;'            '\;'  '     '\;::_;:-·'´‘          \:;_;::-·~^*'´¨¯'           \:;_;::-·~^*'´¨¯'    
+                                                        °                             '               `¨'                          '¨                                                                        
+ \n\n
               """).replace('█', Fore.CYAN+"█"+Fore.RESET).replace('~', Fore.CYAN+"~"+Fore.RESET).replace('-', Fore.CYAN+"-"+Fore.RESET))
 
     def printer(self, color, status, code):
