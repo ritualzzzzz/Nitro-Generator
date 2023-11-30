@@ -12,7 +12,7 @@ def center(var:str, space:int=None): # From Pycenter
 
 class Console():        
     def ui(self):
-        os.system(f'cls && title [RITUALZ] Discord Nitro Generator  ^|  For Thanks. Cashapp $qzorz' if os.name == "nt" else "clear")
+        os.system(f'cls && title [RITUALZ] Discord Nitro Generator Made by Ritualzz,  ^|  For Thanks. Cashapp $qzorz' if os.name == "nt" else "clear")
         print(center(f"""\n\n
 
  ▄▄▄▄▄▄   ▄▄▄ ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄     ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ 
