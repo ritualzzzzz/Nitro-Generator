@@ -15,7 +15,13 @@ class Console():
         os.system(f'cls && title [RITUALZ] Discord Nitro Generator  ^|  For Thanks. Cashapp $qzorz' if os.name == "nt" else "clear")
         print(center(f"""\n\n
 
-  RITUALZZZ NITRO GEN   
+ ▄▄▄▄▄▄   ▄▄▄ ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄     ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ 
+█   ▄  █ █   █       █  █ █  █       █   █   █       █       █
+█  █ █ █ █   █▄     ▄█  █ █  █   ▄   █   █   █▄▄▄▄   █▄▄▄▄   █
+█   █▄▄█▄█   █ █   █ █  █▄█  █  █▄█  █   █    ▄▄▄▄█  █▄▄▄▄█  █
+█    ▄▄  █   █ █   █ █       █       █   █▄▄▄█ ▄▄▄▄▄▄█ ▄▄▄▄▄▄█
+█   █  █ █   █ █   █ █       █   ▄   █       █ █▄▄▄▄▄█ █▄▄▄▄▄ 
+█▄▄▄█  █▄█▄▄▄█ █▄▄▄█ █▄▄▄▄▄▄▄█▄▄█ █▄▄█▄▄▄▄▄▄▄█▄▄▄▄▄▄▄█▄▄▄▄▄▄▄█
  \n\n
               """).replace('█', Fore.CYAN+"█"+Fore.RESET).replace('~', Fore.CYAN+"~"+Fore.RESET).replace('-', Fore.CYAN+"-"+Fore.RESET))
 
