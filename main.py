@@ -1,9 +1,9 @@
 import os, requests, random, threading, json, time, multiprocessing
 from colorama import Fore
 
-# Credit to Pycenter by billythegoat356
-# Github: https://github.com/billythegoat356/pycenter/
-# License: https://github.com/billythegoat356/pycenter/blob/main/LICENSE
+# Ily
+# helper  .cuzisaidso
+# its a parade inside my city ye
 
 def center(var:str, space:int=None): # From Pycenter
     if not space:
@@ -13,19 +13,22 @@ def center(var:str, space:int=None): # From Pycenter
 
 class Console():        
     def ui(self):
-        os.system(f'cls && title [DNG] Discord Nitro Generator  ^|  For Help join discord.gg/kaneki' if os.name == "nt" else "clear")
+        os.system(f'cls && title [Ritualzzzz] Valorant account gen  ^|  https://discord.gg/JnpCAGJC' if os.name == "nt" else "clear")
         print(center(f"""\n\n
-██████╗ ███╗   ██╗ ██████╗ 
-██╔══██╗████╗  ██║██╔════╝            ~ Discord Nitro Generator ~
-██║  ██║██╔██╗ ██║██║  ███╗     
-██║  ██║██║╚██╗██║██║   ██║     github.com/kanekiWeb ~ skulldev.ga
-██████╔╝██║ ╚████║╚██████╔╝ 
-╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ \n\n
+  ██████ ▒██   ██▒ █    ██   ▄████▄  ▓█████     ██▒   █▓ ▄▄▄       █
+▒██    ▒ ▒▒ █ █ ▒░ ██  ▓██▒ ▒██▀ ▀█  ▓█   ▀    ▓██░   █▒▒████▄    ▓█
+░ ▓██▄   ░░  █   ░▓██  ▒██░ ▒▓█    ▄ ▒███       ▓██  █▒░▒██  ▀█▄  ▒█
+  ▒   ██▒ ░ █ █ ▒ ▓▓█  ░██░▒▒▓▓▄ ▄██ ▒▓█  ▄      ▒██ █░░░██▄▄▄▄██ ▒█
+▒██████▒▒▒██▒ ▒██▒▒▒█████▓ ░▒ ▓███▀ ▒░▒████       ▒▀█░  ▒▓█   ▓██▒░█
+▒ ▒▓▒ ▒ ░▒▒ ░ ░▓ ░░▒▓▒ ▒ ▒ ░░ ░▒ ▒  ░░░ ▒░        ░ ▐░  ░▒▒   ▓▒█░░
+░ ░▒  ░ ░░░   ░▒ ░░░▒░ ░ ░    ░  ▒  ░ ░ ░         ░ ░░  ░ ░   ▒▒ ░░
+░  ░  ░   ░    ░   ░░░ ░ ░  ░           ░            ░    ░   ▒
+      ░   ░    ░     ░      ░ ░     ░   ░            ░        ░  ░ \n\n
               """).replace('█', Fore.CYAN+"█"+Fore.RESET).replace('~', Fore.CYAN+"~"+Fore.RESET).replace('-', Fore.CYAN+"-"+Fore.RESET))
 
     def printer(self, color, status, code):
         threading.Lock().acquire()
-        print(f"{color} {status} > {Fore.RESET}discord.gift/{code}")
+        print(f"{color} {status} > {Fore.RESET}ValorantAcc/{code}")
     
     def proxies_count(self):
         proxies_list = 0
@@ -55,7 +58,7 @@ class Worker():
             return data[args]
     
     def run(self):
-        self.code = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(16))
+        self.code = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@gmail.com") for _ in range(16))
         try:
             req = requests.get(f'https://discordapp.com/api/v6/entitlements/gift-codes/{self.code}?with_application=false&with_subscription_plan=true', proxies={'http': self.config("proxies")+'://'+self.random_proxy(),'https': self.config("proxies")+'://'+self.random_proxy()}, timeout=1)
             
@@ -63,7 +66,7 @@ class Worker():
                 Console().printer(Fore.LIGHTGREEN_EX, " Valid ", self.code)
                 open('results/hit.txt', 'a+').write(self.code+"\n")
                 try:
-                    requests.post(Worker().config("webhook", "url"), json={"content": f"||@here|| **__New Valid Nitro !!__**\n\nhttps://discord.gift/{self.code}", "username": Worker().config("webhook", "username"), "avatar_url": Worker().config("webhook", "avatar")})
+                    requests.post(Worker().config("webhook", "url"), json={"content": f"||@here|| **__New Valid Valorant Account !!__**\n\nhttps://discord.gift/{self.code}", "username": Worker().config("webhook", "username"), "avatar_url": Worker().config("webhook", "avatar")})
                 except:
                     pass
             elif req.status_code == 404:
@@ -78,7 +81,7 @@ class Worker():
         except KeyboardInterrupt:
             Console().ui()
             threading.Lock().acquire()
-            print(f"{Fore.LIGHTRED_EX} Stopped > {Fore.RESET}Nitro Gen Stopped by Keyboard Interrupt.")
+            print(f"{Fore.LIGHTRED_EX} Stopped > {Fore.RESET}Valorant Gen Stopped by Keyboard Interrupt.")
             os.system('pause >nul')
             exit()
         except:
